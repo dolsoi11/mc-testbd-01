@@ -16,6 +16,35 @@
         </div>
         <div class="lotto-numbers" id="lotto-numbers"></div>
         <button id="generate-btn">Generate Numbers</button>
+        <section class="comments-section" aria-labelledby="comments-heading">
+            <div class="comments-header">
+                <h2 id="comments-heading">Comments</h2>
+                <p>Leave a quick note below.</p>
+            </div>
+            <form id="comment-form" class="comment-form">
+                <input
+                    id="comment-name"
+                    name="name"
+                    type="text"
+                    maxlength="24"
+                    placeholder="Name"
+                    aria-label="Name"
+                    required
+                />
+                <textarea
+                    id="comment-text"
+                    name="comment"
+                    rows="4"
+                    maxlength="240"
+                    placeholder="Write a comment"
+                    aria-label="Comment"
+                    required
+                ></textarea>
+                <button id="comment-submit" type="submit">Post Comment</button>
+            </form>
+            <div id="comments-empty" class="comments-empty">No comments yet.</div>
+            <div id="comments-list" class="comments-list" aria-live="polite"></div>
+        </section>
     </div>
     <script src="main.js"></script>
 </body>
